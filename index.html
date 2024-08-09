@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Creative - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+	        .timer {
+            font-size: 2em;
+            color: #fff;
+            background-color: #007bff;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .timer span {
+            display: inline-block;
+            margin: 0 5px;
+        }
+				.container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #7f7070;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+</style>
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">70 - летие КГТУ</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">О нас</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Выпускники</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Спикеры</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">План мероприятия</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Контакты</a>
+                    </li>
+										<li>
+											<a href="allusers.php">Список участников</a>
+									</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Мероприятие в честь 70 летия КГТУ им. И.Раззакова</h1>
+                <hr>
+                <p>зарегистрируйтесь на мероприятие</p>
+                <a href="reg.html" class="btn btn-primary btn-xl page-scroll">зарегистрируйтесь</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+			<div class="container">
+				<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+								<h2 class="section-heading">Our Introduction Video</h2>
+								<hr class="light">
+								<p class="text-faded">Check out our introductory video to learn more about us.</p>
+								<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=My-DZa_oLGs&embeds_referring_euri=https%3A%2F%2Fkstu.kg%2F&embeds_referring_origin=https%3A%2F%2Fkstu.kg&feature=emb_logo" allowfullscreen></iframe>
+								</div>
+						</div>
+				</div>
+		</div>
+    </section>
+
+		<section class="bg-primary" id="about">
+			<div class="container">
+				<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<h1>До мероприятия осталось:</h1>
+							<div id="countdown" class="timer"></div>
+						</div>
+						</div>
+				</div>
+		</div>
+    </section>
+
+
+
+    <section id="services">
+			<h1>Галлерея выпускников</h1>
+			<div class="gallery">
+					<div class="gallery-item">
+							<img src="img/portfolio/fullsize/1.jpg" alt="Image 1">
+							<div class="caption">Image 1</div>
+					</div>
+					<div class="gallery-item">
+							<img src="img/portfolio/fullsize/1.jpg" alt="Image 2">
+							<div class="caption">Image 2</div>
+					</div>
+					<div class="gallery-item">
+							<img src="img/portfolio/fullsize/1.jpg" alt="Image 3">
+							<div class="caption">Image 3</div>
+					</div>
+					<div class="gallery-item">
+							<img src="img/portfolio/fullsize/1.jpg" alt="Image 4">
+							<div class="caption">Image 4</div>
+					</div>
+			</div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Спикер
+                                </div>
+                                <div class="project-name">
+                                    Иванов Иван
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Спикер
+                                </div>
+                                <div class="project-name">
+																	Иванов Иван
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Спикер
+                                </div>
+                                <div class="project-name">
+																	Иванов Иван
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Спикер
+                                </div>
+                                <div class="project-name">
+																	Иванов Иван
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Спикер
+                                </div>
+                                <div class="project-name">
+																	Иванов Иван
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Спикер
+                                </div>
+                                <div class="project-name">
+																	Иванов Иван
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Список</h2>
+                <a href="allusers.php" class="btn btn-default btn-xl sr-button">Смотреть список спикеров</a>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+							<div class="container">
+								<h1>Международный образовательный форум</h1>
+								<h2>«Приоритетные тенденции международной интеграции образования»</h2>
+								<p>Посвященный 20-летнему юбилею Кыргызско-Германского технического института</p>
+								
+								<p><strong>Дата и место проведения:</strong> Бишкек, БАЗ КГТУ им.И.Раззакова</p>
+								<p><strong>Организаторы:</strong> КГТИ КГТУ им.И.Раззакова</p>
+								<p><strong>Участники форума:</strong> профессора, аспиранты, докторанты, студенты, а также международные эксперты, профессора из вузов-партнеров ближнего и дальнего зарубежья</p>
+								<p><strong>Рабочие языки форума:</strong> русский и немецкий</p>
+								
+								<table>
+										<tr>
+												<th>Дата</th>
+												<th>Время</th>
+												<th>Мероприятие</th>
+										</tr>
+										<tr>
+												<td>17 сентября 2024 года</td>
+												<td>13:00-16:00</td>
+												<td>Пленарные доклады международного образовательного форума “Приоритетные тенденции международной интеграции образования”</td>
+										</tr>
+										<tr>
+												<td>18 сентября 2024 года</td>
+												<td>08:30-13:00</td>
+												<td>Панельные сессии международного образовательного форума “Приоритетные тенденции международной интеграции образования”</td>
+										</tr>
+								</table>
+								
+								<h2>Торжественное собрание</h2>
+								<p>В честь 70-летия Кыргызского государственного технического университета им. И. Раззакова</p>
+								<p><strong>Дата и время проведения:</strong> 9:00, 18 сентября 2024 г.</p>
+								<p><strong>Место проведения:</strong> Национальная Филармония Кыргызской Республики.</p>
+								<p><strong>Количество участников:</strong> 700-1000 человек</p>
+				
+								<table>
+										<tr>
+												<th>Дата</th>
+												<th>Время</th>
+												<th>Содержание мероприятия</th>
+										</tr>
+										<tr>
+												<td>18 сентября 2024 года</td>
+												<td>13:00 – 17:30</td>
+												<td>Торжественное собрание в честь 70-летия Кыргызского государственного технического университета им.И.Раззакова</td>
+										</tr>
+								</table>
+								
+								<h2>Общее собрание Российско-Кыргызского консорциума технических университетов</h2>
+								<p><strong>Дата проведения:</strong> 19-21 сентября 2024 г.</p>
+								<p><strong>Место проведения:</strong> Иссык-Кульская область.</p>
+								<p><strong>Количество участников:</strong> 100 человек</p>
+								<p><strong>Организаторы:</strong> Национальный исследовательский университет «Московский энергетический институт» и Кыргызский государственный технический университет им. И. Раззакова.</p>
+								
+								<table>
+										<tr>
+												<th>Дата</th>
+												<th>Время</th>
+												<th>Содержание мероприятия</th>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>9:00</td>
+												<td>Выезд на Иссык-Куль</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>13:00</td>
+												<td>Заезд участников</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>14:00</td>
+												<td>Обед. Пансионат «Аврора»</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>15:00 – 16:50</td>
+												<td>Пленарное заседание X-ой научно-технической конференции "Интеграционные процессы в научно-техническом и образовательном процессе</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>16:50 – 18:18</td>
+												<td>Выступление председателей X-ой научно-технической конференции "Интеграционные процессы в научно-техническом и образовательном процессе</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>18:15 – 18:45</td>
+												<td>Закрытие конференции. Принятие резолюции конференции</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>15:00 – 15:30</td>
+												<td>Регистрация участников конференции ENAEE «Тенденции развития и проблемы обеспечения инженерного образования и его будущего в цифровом мире»</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>15:30 – 15:50</td>
+												<td>Официальное открытие конференции ENAEE</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>15:50 – 17:35</td>
+												<td>Выступление спикеров конференции ENAEE</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>18:10 – 18:30</td>
+												<td>Закрытие конференции ENAEE</td>
+										</tr>
+										<tr>
+												<td>19 сентября 2024 года</td>
+												<td>20:00</td>
+												<td>Торжественный ужин</td>
+										</tr>
+										<tr>
+												<td>20 сентября 2024 года</td>
+												<td>8:00 – 17:30</td>
+												<td>12-е общее собрание РККТУ</td>
+										</tr>
+										<tr>
+												<td>20 сентября 2024 года</td>
+												<td>14:30 – 17:30</td>
+												<td>Выезд в Рух Ордо желающих делегатов</td>
+										</tr>
+										<tr>
+												<td>20 сентября 2024 года</td>
+												<td>18:00</td>
+												<td>Ужин</td>
+										</tr>
+										<tr>
+												<td>21 сентября 2024 года</td>
+												<td>0:00-12:00</td>
+												<td>Отъезд делегатов РККТУ в г. Бишкек</td>
+										</tr>
+								</table>
+								
+								<div class="contact-info">
+										<h3>Секретариат оргкомитета</h3>
+										<table>
+											<tr>
+												<th>Ф.И.О.</th>
+												<th>Должность</th>
+												<th>Контактные данные</th>
+											</tr>
+											<tr>
+												<td>Арзыбаев Алмазбек Момунович</td>
+												<td>Проректор по научной работе</td>
+												<td>0312 54-51-40</td>
+											</tr>
+										</table>
+								</div>
+						</div>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Свяжитесь с нами</h2>
+                    <hr class="primary">
+                    <p>Наши контакты</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>+996-312-54-51-25</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">rector@kstu.kg </a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+		<!-- Timer script -->
+		<script>
+			        function countdown(date) {
+            const targetDate = new Date(date).getTime();
+            const countdownElement = document.getElementById('countdown');
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.innerHTML = `
+                    <span>${days}д</span>
+                    <span>${hours}ч</span>
+                    <span>${minutes}м</span>
+                    <span>${seconds}с</span>
+                `;
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    countdownElement.innerHTML = "ВРЕМЯ ИСТЕКЛО";
+                }
+            }
+
+            updateCountdown();
+            const interval = setInterval(updateCountdown, 1000);
+        }
+
+        countdown('September 17, 2024 00:00:00');
+		</script>
+</body>
+
+</html>
